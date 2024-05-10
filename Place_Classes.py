@@ -11,4 +11,16 @@ class House_type(Enum):
 class Habitat:
     rooms = 0
     rent = 0
+    location = []
+
+
+    def __init__(self, in_rooms, in_rent):
+        self.rooms = in_rooms
+        self.rent = in_rent
+
+    def add_rooms(self, in_rooms):
+        self.rooms = in_rooms
+
+    
+    
     
