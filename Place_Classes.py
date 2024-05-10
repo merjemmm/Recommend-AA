@@ -12,11 +12,16 @@ class Habitat:
     _rooms = 0
     _rent = 0
     _location = []
+    _kind = APARTMENT
 
 
-    def __init__(self, in_rooms, in_rent):
-        self.rooms = in_rooms
-        self.rent = in_rent
+    def __init__(self, in_rooms, in_rent, in_loc, in_kind):
+        self._rooms = in_rooms
+        self._rent = in_rent
+        self._kind = in_kind
+        self._location = in_loc
+
+
 
     def add_rooms(self, in_rooms):
         self.rooms = in_rooms
